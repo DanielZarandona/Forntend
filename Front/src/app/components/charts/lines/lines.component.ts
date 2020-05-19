@@ -26,12 +26,7 @@ export class LinesComponent implements OnInit {
     responsive: true,
   };
 
-  public lineChartColors: Color[] = [
-    {
-      borderColor: 'black',
-      backgroundColor: 'rgba(255,0,0,0.3)',
-    },
-  ];
+  public lineChartColors: any[] = ['rgba(255,0,0,1)', 'rgba(10,255,0,0.3)', 'rgba(0,13,255,1)', 'rgba(196,79,244,1)','rgba(16,79,24,1)','rgba(34,239,24,1)'];
   public lineChartLegend = true;
   public lineChartType = 'line';
   public lineChartPlugins = [];

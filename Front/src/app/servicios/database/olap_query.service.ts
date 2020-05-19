@@ -47,7 +47,7 @@ export class QueryMdxOlapService {
   heroes: any[] = [];
   getItemsCmb() {
     this.httpClient
-      .get(`http://localhost:89/daozara/northwind/GetClients`)
+      .get(`http://localhost:60660/daozara/nortwind/GetClients`)
       .pipe(map((result: any) => (this.heroes = result.datosDimension)));
     return this.heroes;
   }
@@ -56,7 +56,7 @@ export class QueryMdxOlapService {
     const datos: any[] = [];
     
     this.httpClient
-      .get(`http://localhost:89/daozara/northwind/GetAll2`)
+      .get(`http://localhost:60660/daozara/nortwind/GetAll2`)
       .subscribe(
         (data) => {
           return data;
@@ -88,7 +88,7 @@ export class QueryMdxOlapService {
   getItemsByDimension(): string[] {
     let items: string[] = [];
     this.httpClient
-      .get(`http://localhost:89/daozara/northwind/GetClients`)
+      .get(`http://localhost:60660/daozara/nortwind/GetClients`)
       .subscribe(
         (res: any) => {
           const temp_max = res.map((res) => res);
